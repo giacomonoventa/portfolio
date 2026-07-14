@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T20:22:51.638Z",
+  "generatedAt": "2026-07-14T17:12:55.279Z",
   "sistema": {
     "logo": "foto/sistema/logo.png",
     "profilo": "foto/sistema/profilo.jpg"
@@ -29,14 +29,6 @@
   ],
   "sport": [
     {
-      "slug": "basket",
-      "name": "Basket",
-      "type": "sport",
-      "count": 0,
-      "cover": [],
-      "images": []
-    },
-    {
       "slug": "calcio",
       "name": "Calcio",
       "type": "sport",
@@ -44,16 +36,16 @@
       "cover": [
         {
           "file": "01.jpg",
-          "width": 5406,
-          "height": 4052,
-          "orientation": "h",
+          "width": 4640,
+          "height": 5208,
+          "orientation": "sq",
           "url": "foto/sport/calcio/01.jpg"
         },
         {
           "file": "02.jpg",
-          "width": 4640,
-          "height": 5208,
-          "orientation": "sq",
+          "width": 5406,
+          "height": 4052,
+          "orientation": "h",
           "url": "foto/sport/calcio/02.jpg"
         },
         {
@@ -67,16 +59,16 @@
       "images": [
         {
           "file": "01.jpg",
-          "width": 5406,
-          "height": 4052,
-          "orientation": "h",
+          "width": 4640,
+          "height": 5208,
+          "orientation": "sq",
           "url": "foto/sport/calcio/01.jpg"
         },
         {
           "file": "02.jpg",
-          "width": 4640,
-          "height": 5208,
-          "orientation": "sq",
+          "width": 5406,
+          "height": 4052,
+          "orientation": "h",
           "url": "foto/sport/calcio/02.jpg"
         },
         {
