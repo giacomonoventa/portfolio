@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Giacomo Noventa — Sport Photography</title>
+<meta name="description" content="Giacomo Noventa, fotografo sportivo. Calcio, pallavolo, basket, atletica e altri eventi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header id="site-header">
+  <div class="brand" id="brand" data-nav="home">
+    <div class="logo-slot" id="logo-slot"><div class="dot"></div></div>
+    <div class="brand-name">Giacomo Noventa</div>
+  </div>
+  <nav id="mainnav">
+    <div class="navlink simple" data-nav="home"><span>Home</span></div>
+    <div class="navlink">
+      <span>Sport <i class="caret">▾</i></span>
+      <div class="dropdown" id="dropdown-sport"></div>
+    </div>
+    <div class="navlink">
+      <span>Altri eventi <i class="caret">▾</i></span>
+      <div class="dropdown" id="dropdown-eventi"></div>
+    </div>
+    <div class="navlink simple" data-nav="chi-sono"><span>Chi sono</span></div>
+    <div class="navlink simple" data-nav="contatti"><span>Contatti</span></div>
+  </nav>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</header>
+
+<main id="app"></main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close">✕</button>
+  <button class="lb-arrow lb-prev" id="lb-prev">‹</button>
+  <div class="lb-photo" id="lb-photo"></div>
+  <button class="lb-arrow lb-next" id="lb-next">›</button>
+  <div class="lb-caption" id="lb-caption"></div>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
