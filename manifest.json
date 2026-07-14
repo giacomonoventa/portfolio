@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T17:12:55.279Z",
+  "generatedAt": "2026-07-14T17:31:41.745Z",
   "sistema": {
     "logo": "foto/sistema/logo.png",
     "profilo": "foto/sistema/profilo.jpg"
@@ -79,14 +79,6 @@
           "url": "foto/sport/calcio/03.jpg"
         }
       ]
-    },
-    {
-      "slug": "pallavolo",
-      "name": "Pallavolo",
-      "type": "sport",
-      "count": 0,
-      "cover": [],
-      "images": []
     }
   ],
   "eventi": [
