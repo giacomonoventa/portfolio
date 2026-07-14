@@ -112,6 +112,50 @@ il loro widget incorporato, senza reCAPTCHA di Google) — vedi il file
 - **Email**: piano email base Aruba con inoltro automatico verso la tua
   Gmail (già discusso in precedenza).
 
+## Pubblicazione su GitHub Pages (alternativa a Cloudflare Pages)
+
+Il progetto include già `.github/workflows/deploy.yml`: ad ogni `push` sul
+branch `main`, GitHub esegue automaticamente `node scripts/build-manifest.js`
+(rigenera `manifest.json` dalle foto) e pubblica il risultato — lo stesso
+comportamento che avresti con Cloudflare Pages, senza doverlo configurare a
+mano.
+
+Per attivarlo la prima volta:
+
+1. Vai sul repository su github.com
+2. **Settings** → **Pages** (menu laterale sinistro)
+3. In "Build and deployment" → **Source**, seleziona **"GitHub Actions"**
+4. Fai un push qualsiasi (anche solo con una foto nuova) per far partire la
+   prima pubblicazione — la trovi in corso nella tab **Actions** del
+   repository
+5. Al termine (icona verde ✓), il link del sito compare in Settings → Pages
+   in alto (tipo `https://tuoutente.github.io/portfolio/`)
+
+## Pannello di test grafico (temporaneo)
+
+È incluso uno strumento per provare al volo variazioni di dimensioni
+(titoli, testo, immagini, spaziature) **direttamente sul sito reale**, senza
+modificare alcun file — è solo un effetto visivo nel browser che sparisce
+al refresh.
+
+- Appare come una linguetta sottile in basso: cliccala per aprire il
+  pannello
+- Ogni controllo riparte dal valore attualmente scritto nel CSS
+- Sotto ogni slider trovi il valore corrente, cliccabile per selezionarlo e
+  copiarlo — se una modifica ti convince, copia quel valore e incollalo a
+  mano nella variabile corrispondente in `assets/css/style.css` (dentro
+  `:root`) per renderla permanente
+- Il pulsante "Ripristina valori del CSS" ricarica semplicemente la pagina
+
+**Per rimuoverlo del tutto a lavoro finito**, due soli passaggi:
+1. Elimina il file `assets/js/pannello-test.js`
+2. Elimina questa riga da `index.html`:
+   ```html
+   <script src="assets/js/pannello-test.js"></script>
+   ```
+Nessun altro file contiene codice del pannello — i valori che avrai
+eventualmente copiato nel CSS restano intatti.
+
 ## Prossimi passi
 
 Il sito è funzionalmente completo lato struttura (home, gallerie, lightbox,
