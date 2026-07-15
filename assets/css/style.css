@@ -99,7 +99,7 @@ nav{display:flex;align-items:center;gap:36px;}
 .navlink .caret{font-size:9px;transition:transform .25s var(--ease);}
 .navlink:hover .caret{transform:rotate(180deg);}
 .dropdown{
-  position:absolute; top:calc(100% + 18px); left:50%; transform:translateX(-50%) translateY(-6px);
+  position:absolute; top:calc(100% + 4px); left:50%; transform:translateX(-50%) translateY(-6px);
   background:var(--bg-1); border:1px solid var(--line);
   padding:10px 0; min-width:180px;
   opacity:0; visibility:hidden;
@@ -202,6 +202,15 @@ footer .foot-cta{font-family:var(--serif); font-weight:600; font-size:var(--fs-b
 .contatti-page{padding:var(--space-page-top) var(--space-container-x) 100px; max-width:640px; margin:0 auto;}
 .contatti-page h1{font-family:var(--serif); font-weight:600; font-size:clamp(32px,5vw,var(--fs-page-title)); margin-bottom:14px;}
 .contatti-intro{color:var(--text-1); font-size:var(--fs-body-small); margin-bottom:44px; line-height:1.7;}
+.contatti-recapiti{
+  display:flex; flex-wrap:wrap; gap:28px;
+  margin-bottom:48px; padding-bottom:36px;
+  border-bottom:1px solid var(--line);
+}
+.recapito{display:flex; flex-direction:column; gap:4px;}
+.recapito-label{font-size:var(--fs-mono); letter-spacing:.1em; text-transform:uppercase; color:var(--text-2); font-family:'JetBrains Mono',monospace;}
+.recapito a{color:var(--text-0); font-size:var(--fs-body-small); text-decoration:none; border-bottom:1px solid transparent; transition:border-color .2s;}
+.recapito a:hover{border-color:var(--text-0);}
 .form-row{margin-bottom:var(--space-form-row);}
 .form-row label{display:block; font-family:'JetBrains Mono',monospace; font-size:var(--fs-form-label); letter-spacing:.08em; text-transform:uppercase; color:var(--text-1); margin-bottom:8px;}
 .form-row input[type=text], .form-row input[type=email], .form-row input[type=tel], .form-row input[type=date], .form-row input[type=time], .form-row textarea{
@@ -228,7 +237,6 @@ footer .foot-cta{font-family:var(--serif); font-weight:600; font-size:var(--fs-b
 @media (max-width:860px){
   nav{position:fixed; top:66px; left:0; right:0; background:var(--bg-1);
     flex-direction:column; align-items:flex-start; gap:0;
-    border-bottom:1px solid var(--line);
     max-height:0; overflow:hidden; transition:max-height .35s var(--ease);}
   nav.open{max-height:400px;}
   .navlink{width:100%;}

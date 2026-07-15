@@ -78,7 +78,7 @@
     window.scrollTo(0,0);
     const hasHero = MANIFEST.copertina.length > 0;
     const heroSlides = hasHero
-      ? MANIFEST.copertina.map((img,i)=>`<div class="hero-slide${i===0?' active':''}"><img src="${img.url}" alt=""></div>`).join('')
+      ? MANIFEST.copertina.map((img,i)=>`<div class="hero-slide${i===0?' active':''}"><img src="${img.url}" alt="" loading="lazy" decoding="async"></div>`).join('')
       : emptyState('Foto in arrivo…');
 
     app.innerHTML = `
@@ -115,15 +115,16 @@
         slides[idx].classList.add('active');
       }, 4500);
     }
-    // nome header appare non appena il titolo "Giacomo Noventa" esce dalla vista
-    // (prima veniva osservata tutta la sezione .hero: il nome comparirebbe
-    // solo a copertina interamente scomparsa, troppo tardi)
+    // nome header appare esattamente quando il titolo "Giacomo Noventa" passa
+    // dietro l'header (non quando esce del tutto dallo schermo): si usa un
+    // rootMargin negativo pari all'altezza reale dell'header
     const heroTitleTarget = heroObserverTarget.querySelector('.hero-title');
+    const headerHeight = headerEl.offsetHeight;
     const io = new IntersectionObserver((entries)=>{
       entries.forEach(entry=>{
         headerEl.classList.toggle('show-name', !entry.isIntersecting);
       });
-    }, {threshold:0});
+    }, {threshold:0, rootMargin:`-${headerHeight}px 0px 0px 0px`});
     io.observe(heroTitleTarget || heroObserverTarget);
 
     buildSportGrid();
@@ -139,7 +140,7 @@
     wrap.innerHTML = MANIFEST.sport.map(cat => {
       const cover = cat.cover;
       const slides = cover.length
-        ? cover.map((img,i)=>`<div class="band-slide${i===0?' active':''}"><img src="${img.url}" alt="${cat.name}"></div>`).join('')
+        ? cover.map((img,i)=>`<div class="band-slide${i===0?' active':''}"><img src="${img.url}" alt="${cat.name}" loading="lazy" decoding="async"></div>`).join('')
         : emptyState('Foto in arrivo…');
       return `
         <div class="sport-card" data-slug="${cat.slug}" data-type="sport">
@@ -175,7 +176,7 @@
       const cover0 = cat.cover[0];
       return `
         <div class="other-card" data-slug="${cat.slug}" data-type="evento">
-          ${cover0 ? `<img src="${cover0.url}" alt="${cat.name}">` : emptyState('Foto in arrivo…')}
+          ${cover0 ? `<img src="${cover0.url}" alt="${cat.name}" loading="lazy" decoding="async">` : emptyState('Foto in arrivo…')}
           ${cover0 ? '<div class="cc-overlay"></div>' : ''}
           <div class="cc-body"><div class="cc-name">${cat.name}</div></div>
         </div>`;
@@ -258,7 +259,7 @@
   }
   function renderLightbox(){
     const img = currentGallery[lbIndex];
-    lbPhoto.innerHTML = `<img src="${img.url}" alt="">`;
+    lbPhoto.innerHTML = `<img src="${img.url}" alt="" loading="lazy" decoding="async">`;
     lbCaption.textContent = String(lbIndex+1).padStart(2,'0') + ' / ' + String(currentGallery.length).padStart(2,'0');
   }
   document.getElementById('lb-close').addEventListener('click', closeLightbox);
@@ -286,7 +287,7 @@
     window.scrollTo(0,0);
     headerEl.classList.add('show-name');
     const photo = MANIFEST.sistema.profilo
-      ? `<img src="${MANIFEST.sistema.profilo}" alt="Giacomo Noventa">`
+      ? `<img src="${MANIFEST.sistema.profilo}" alt="Giacomo Noventa" loading="lazy" decoding="async">`
       : emptyState('Foto in arrivo…');
     app.innerHTML = `
       <div class="chisono-page">
@@ -302,47 +303,31 @@
   function renderContatti(){
     window.scrollTo(0,0);
     headerEl.classList.add('show-name');
+
+    const tel = CONTENT.telefono && !CONTENT.telefono.includes('PLACEHOLDER') ? CONTENT.telefono : null;
+    const email = CONTENT.email || null;
+    const insta = CONTENT.instagram || null;
+
     app.innerHTML = `
       <div class="contatti-page">
         <h1>Contatti</h1>
         <p class="contatti-intro">Raccontami il tuo evento: ti risponderò il prima possibile con disponibilità e preventivo.</p>
+
+        <div class="contatti-recapiti">
+          ${email ? `<div class="recapito"><span class="recapito-label">Email</span><a href="mailto:${email}">${email}</a></div>` : ''}
+          ${tel ? `<div class="recapito"><span class="recapito-label">Telefono</span><a href="tel:${tel.replace(/\s+/g,'')}">${tel}</a></div>` : ''}
+          ${insta ? `<div class="recapito"><span class="recapito-label">Instagram</span><a href="https://instagram.com/${insta.replace('@','')}" target="_blank" rel="noopener">${insta}</a></div>` : ''}
+        </div>
+
         <form id="contact-form">
           <div class="form-row"><label>Nome e cognome</label><input type="text" name="nome" required></div>
-          <div class="two-col">
-            <div class="form-row"><label>Email</label><input type="email" name="email" required></div>
-            <div class="form-row"><label>Telefono</label><input type="tel" name="telefono" required></div>
-          </div>
-          <div class="form-row"><label>Nome evento</label><input type="text" name="nome_evento" placeholder="Es. Finale campionato, Matrimonio..." required></div>
-
-          <div class="toggle-row">
-            <input type="checkbox" id="multi-day">
-            <label for="multi-day">L'evento dura più giorni</label>
-          </div>
-
-          <div id="date-single" class="form-row">
-            <label>Data evento</label>
-            <input type="date" name="data_evento">
-          </div>
-          <div id="date-range" class="two-col" style="display:none;">
-            <div class="form-row"><label>Data inizio</label><input type="date" name="data_inizio"></div>
-            <div class="form-row"><label>Data fine</label><input type="date" name="data_fine"></div>
-          </div>
-
-          <div class="form-row"><label>Orario indicativo giornaliero</label><input type="text" name="orario" placeholder="Es. 15:00 - 19:00"></div>
-          <div class="form-row"><label>Note (facoltativo)</label><textarea name="note" placeholder="Location, numero persone, esigenze particolari..."></textarea></div>
+          <div class="form-row"><label>Email</label><input type="email" name="email" required></div>
+          <div class="form-row"><label>Note</label><textarea name="note" placeholder="Raccontami evento, data, location, esigenze particolari..."></textarea></div>
 
           <button type="submit" class="submit-btn">Invia richiesta</button>
           <div class="form-status" id="form-status"></div>
         </form>
       </div>`;
-
-    const multiDay = document.getElementById('multi-day');
-    const single = document.getElementById('date-single');
-    const range = document.getElementById('date-range');
-    multiDay.addEventListener('change', ()=>{
-      single.style.display = multiDay.checked ? 'none' : 'block';
-      range.style.display = multiDay.checked ? 'grid' : 'none';
-    });
 
     document.getElementById('contact-form').addEventListener('submit', handleSubmit);
   }
