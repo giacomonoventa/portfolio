@@ -115,13 +115,16 @@
         slides[idx].classList.add('active');
       }, 4500);
     }
-    // nome header appare solo dopo che la hero esce dalla vista
+    // nome header appare non appena il titolo "Giacomo Noventa" esce dalla vista
+    // (prima veniva osservata tutta la sezione .hero: il nome comparirebbe
+    // solo a copertina interamente scomparsa, troppo tardi)
+    const heroTitleTarget = heroObserverTarget.querySelector('.hero-title');
     const io = new IntersectionObserver((entries)=>{
       entries.forEach(entry=>{
         headerEl.classList.toggle('show-name', !entry.isIntersecting);
       });
     }, {threshold:0});
-    io.observe(heroObserverTarget);
+    io.observe(heroTitleTarget || heroObserverTarget);
 
     buildSportGrid();
     buildOtherGrid();

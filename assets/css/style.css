@@ -75,7 +75,6 @@ header{
   padding:22px var(--space-container-x);
   background:rgba(10,10,11,.72);
   backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--line);
 }
 .brand{display:flex;align-items:center;gap:12px;cursor:pointer;}
 .logo-slot{width:var(--logo-size);height:var(--logo-size);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
