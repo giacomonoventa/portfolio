@@ -17,21 +17,8 @@
   // (nessun controllo sui colori, come richiesto)
   const GROUPS = [
     {
-      label: 'Testo — titoli',
-      vars: [
-        { name: '--fs-hero-title', label: 'Titolo copertina (nome)' },
-        { name: '--fs-page-title', label: 'Titolo "Chi sono" / "Contatti"' },
-        { name: '--fs-cat-title', label: 'Titolo pagina categoria' },
-        { name: '--fs-card-title', label: 'Nome sport nelle card' },
-        { name: '--fs-card-title-sm', label: 'Nome categoria "Altri eventi"' },
-        { name: '--fs-brand', label: 'Nome nell\'header' }
-      ]
-    },
-    {
       label: 'Testo — corrente e meta',
       vars: [
-        { name: '--fs-hero-sub', label: 'Sottotitolo copertina' },
-        { name: '--fs-nav', label: 'Voci di menu' },
         { name: '--fs-label', label: 'Etichette sezione (Sport / Altri eventi)' },
         { name: '--fs-body', label: 'Testo corrente (bio Chi sono)' },
         { name: '--fs-body-small', label: 'Testo secondario (intro, campi form)' },
@@ -97,8 +84,8 @@
       max-height:0; overflow:hidden; background:#101012; border-top:1px solid #333;
       transition:max-height .25s ease;
     }
-    #pt-panel.pt-open{max-height:22vh;}
-    #pt-scroll{max-height:22vh; overflow-y:auto; padding:16px 20px 26px;}
+    #pt-panel.pt-open{max-height:60vh;}
+    #pt-scroll{max-height:60vh; overflow-y:auto; padding:16px 20px 26px;}
     .pt-group{margin-bottom:18px;}
     .pt-group h4{
       color:#888; font-size:11px; text-transform:uppercase; letter-spacing:.08em;
@@ -152,102 +139,12 @@
   const panel = document.getElementById('pt-panel');
   tab.addEventListener('click', () => {
     panel.classList.toggle('pt-open');
-    const isOpen = panel.classList.contains('pt-open');
-    tab.textContent = isOpen
+    tab.textContent = panel.classList.contains('pt-open')
       ? '▼ Pannello test grafico (temporaneo)'
       : '▲ Pannello test grafico (temporaneo)';
-    setHeroLabelsVisible(isOpen);
   });
 
   document.getElementById('pt-reset').addEventListener('click', () => location.reload());
-
-  // ---- etichette misure/proporzioni sovrapposte alle immagini di copertina ----
-  // Visibili solo quando il pannello è aperto. Mostrano dimensione attuale
-  // renderizzata + proporzione, e sotto min/max consentiti nella modalità
-  // attuale (desktop/mobile) secondo le variabili CSS attive.
-  const heroLabelStyle = document.createElement('style');
-  heroLabelStyle.textContent = `
-    .pt-dim-label{
-      position:absolute; top:10px; left:10px; z-index:50;
-      background:rgba(0,0,0,.62); color:#fff; font-family:'Courier New',monospace;
-      padding:6px 9px; border-radius:4px; line-height:1.35; pointer-events:none;
-      display:none;
-    }
-    .pt-dim-label.pt-show{display:block;}
-    .pt-dim-label .pt-dim-main{font-size:12px; font-weight:600;}
-    .pt-dim-label .pt-dim-sub{font-size:9.5px; color:#bbb; margin-top:2px;}
-  `;
-  document.head.appendChild(heroLabelStyle);
-
-  function gcd(a, b) { return b === 0 ? a : gcd(b, a % b); }
-
-  function isMobileNow() {
-    return window.innerWidth <= 700; // stessa soglia usata nel CSS del sito
-  }
-
-  // stima min/max px per --hero-height nella modalità attuale, leggendo
-  // il valore corrente (vh/px) e traducendolo in un range indicativo
-  function heroMinMax() {
-    const raw = currentRootValue('--hero-height');
-    const { num, unit } = parseValue(raw || '92vh');
-    const vh = window.innerHeight;
-    let curPx;
-    if (unit === 'vh') curPx = Math.round(vh * (num / 100));
-    else curPx = num;
-    const minPx = Math.round(curPx * (isMobileNow() ? 0.5 : 0.4));
-    const maxPx = Math.round(curPx * (isMobileNow() ? 1.3 : 1.4));
-    return { minPx, maxPx };
-  }
-
-  function buildLabelsForHero() {
-    const heroSection = document.getElementById('hero');
-    if (!heroSection) return;
-    const slides = heroSection.querySelectorAll('.hero-slide');
-    slides.forEach(slide => {
-      if (slide.querySelector('.pt-dim-label')) return; // già presente
-      slide.style.position = slide.style.position || 'absolute';
-      const label = document.createElement('div');
-      label.className = 'pt-dim-label';
-      label.innerHTML = `<div class="pt-dim-main"></div><div class="pt-dim-sub"></div>`;
-      slide.appendChild(label);
-    });
-  }
-
-  function updateHeroLabels() {
-    const heroSection = document.getElementById('hero');
-    if (!heroSection) return;
-    const rect = heroSection.getBoundingClientRect();
-    const w = Math.round(rect.width);
-    const h = Math.round(rect.height);
-    if (w === 0 || h === 0) return;
-    const divisor = gcd(w, h) || 1;
-    const ratioStr = `${Math.round(w / divisor)}:${Math.round(h / divisor)}`;
-    const { minPx, maxPx } = heroMinMax();
-    const modeLabel = isMobileNow() ? 'mobile' : 'desktop';
-
-    heroSection.querySelectorAll('.pt-dim-label').forEach(label => {
-      label.querySelector('.pt-dim-main').textContent = `${w}×${h}px — ${ratioStr}`;
-      label.querySelector('.pt-dim-sub').textContent = `min ${minPx}px — max ${maxPx}px (${modeLabel})`;
-    });
-  }
-
-  function setHeroLabelsVisible(visible) {
-    document.querySelectorAll('.pt-dim-label').forEach(label => {
-      label.classList.toggle('pt-show', visible);
-    });
-    if (visible) updateHeroLabels();
-  }
-
-  // ricostruisce/aggiorna le etichette periodicamente (le slide della
-  // copertina possono essere generate dopo il caricamento di app.js)
-  const heroLabelInterval = setInterval(() => {
-    buildLabelsForHero();
-    if (panel.classList.contains('pt-open')) updateHeroLabels();
-  }, 800);
-
-  window.addEventListener('resize', () => {
-    if (panel.classList.contains('pt-open')) updateHeroLabels();
-  });
 
   // ---- inizializzazione slider: legge il valore attuale da :root ----
   GROUPS.forEach((g, gi) => {
@@ -283,9 +180,6 @@
         const newVal = input.value + unit;
         document.documentElement.style.setProperty(v.name, newVal);
         out.textContent = newVal;
-        if (v.name === '--hero-height' && panel.classList.contains('pt-open')) {
-          updateHeroLabels();
-        }
       });
 
       // click sul valore: lo seleziona per una copia rapida

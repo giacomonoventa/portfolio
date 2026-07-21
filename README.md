@@ -58,6 +58,14 @@ Regole automatiche:
 - **Nuova categoria**: basta creare una nuova sottocartella dentro `sport/` o
   `eventi/` con dentro le foto — comparirà da sola nel menu e in home al
   prossimo build, senza toccare nulla nel codice.
+- **Immagini diverse per mobile**: se per una foto vuoi un'inquadratura/crop
+  diversa su schermi piccoli, aggiungi accanto al file principale un file
+  con lo stesso nome seguito da `-mobile`. Esempio: `01.jpg` (desktop) +
+  `01-mobile.jpg` (mobile, es. un crop più verticale). Il sito userà
+  automaticamente quella versione sotto gli 860px di larghezza schermo. Il
+  file `-mobile` **non conta** come foto a sé nella galleria — è solo una
+  variante dell'altra. Se non aggiungi il file mobile, viene sempre usata la
+  foto principale su tutti i dispositivi (comportamento invariato).
 
 ## Consiglio per le foto
 

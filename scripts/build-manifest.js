@@ -62,8 +62,16 @@ function orientationOf(w, h) {
 
 function listImages(dirPath) {
   if (!fs.existsSync(dirPath)) return [];
-  return fs.readdirSync(dirPath)
-    .filter(f => IMG_EXT.includes(path.extname(f).toLowerCase()))
+  const allFiles = fs.readdirSync(dirPath)
+    .filter(f => IMG_EXT.includes(path.extname(f).toLowerCase()));
+
+  // le varianti mobile (es. "01-mobile.jpg") non contano come foto a sé:
+  // vengono agganciate al file principale corrispondente ("01.jpg")
+  const mobileSuffix = '-mobile';
+  const isMobileVariant = f => path.basename(f, path.extname(f)).endsWith(mobileSuffix);
+  const mainFiles = allFiles.filter(f => !isMobileVariant(f));
+
+  return mainFiles
     .sort((a, b) => {
       const na = parseInt(a, 10), nb = parseInt(b, 10);
       if (!isNaN(na) && !isNaN(nb)) return na - nb;
@@ -71,8 +79,14 @@ function listImages(dirPath) {
     })
     .map(f => {
       const size = getImageSize(path.join(dirPath, f));
+      const ext = path.extname(f);
+      const base = path.basename(f, ext);
+      const mobileFile = allFiles.find(mf =>
+        path.basename(mf, path.extname(mf)) === base + mobileSuffix
+      );
       return {
         file: f,
+        mobileFile: mobileFile || null,
         width: size ? size.width : null,
         height: size ? size.height : null,
         orientation: size ? orientationOf(size.width, size.height) : 'sq'
@@ -97,20 +111,21 @@ function scanCategories(baseDir, type) {
       const dir = path.join(baseDir, slug);
       const images = listImages(dir);
       const relBase = `foto/${type === 'sport' ? 'sport' : 'eventi'}/${slug}`;
+      const withUrl = img => ({ ...img, url: `${relBase}/${img.file}`, mobileUrl: img.mobileFile ? `${relBase}/${img.mobileFile}` : null });
       return {
         slug,
         name: titleCase(slug),
         type,
         count: images.length,
-        cover: images.slice(0, 3).map(img => ({ ...img, url: `${relBase}/${img.file}` })),
-        images: images.map(img => ({ ...img, url: `${relBase}/${img.file}` }))
+        cover: images.slice(0, 3).map(withUrl),
+        images: images.map(withUrl)
       };
     });
 }
 
 // ---- copertina (hero) ----
 const copertinaImages = listImages(path.join(FOTO_DIR, 'copertina'))
-  .map(img => ({ ...img, url: `foto/copertina/${img.file}` }));
+  .map(img => ({ ...img, url: `foto/copertina/${img.file}`, mobileUrl: img.mobileFile ? `foto/copertina/${img.mobileFile}` : null }));
 
 // ---- sistema (logo, profilo) ----
 function findSystemFile(baseName) {
