@@ -1,108 +1,15 @@
 {
-  "generatedAt": "2026-07-21T16:48:49.058Z",
+  "generatedAt": "2026-07-22T14:15:43.517Z",
   "sistema": {
     "logo": "foto/sistema/logo.png",
     "profilo": "foto/sistema/profilo.jpg"
   },
-  "copertina": [
-    {
-      "file": "01.jpg",
-      "mobileFile": null,
-      "width": 4068,
-      "height": 5474,
-      "orientation": "v",
-      "url": "foto/copertina/01.jpg",
-      "mobileUrl": null
-    },
-    {
-      "file": "02.jpg",
-      "mobileFile": null,
-      "width": 4038,
-      "height": 4304,
-      "orientation": "sq",
-      "url": "foto/copertina/02.jpg",
-      "mobileUrl": null
-    },
-    {
-      "file": "03.jpg",
-      "mobileFile": null,
-      "width": 4640,
-      "height": 6960,
-      "orientation": "v",
-      "url": "foto/copertina/03.jpg",
-      "mobileUrl": null
-    }
-  ],
-  "sport": [
-    {
-      "slug": "calcio",
-      "name": "Calcio",
-      "type": "sport",
-      "count": 3,
-      "cover": [
-        {
-          "file": "01.jpg",
-          "mobileFile": null,
-          "width": 4640,
-          "height": 5208,
-          "orientation": "sq",
-          "url": "foto/sport/calcio/01.jpg",
-          "mobileUrl": null
-        },
-        {
-          "file": "02.jpg",
-          "mobileFile": null,
-          "width": 5406,
-          "height": 4052,
-          "orientation": "h",
-          "url": "foto/sport/calcio/02.jpg",
-          "mobileUrl": null
-        },
-        {
-          "file": "03.jpg",
-          "mobileFile": null,
-          "width": 4830,
-          "height": 4629,
-          "orientation": "sq",
-          "url": "foto/sport/calcio/03.jpg",
-          "mobileUrl": null
-        }
-      ],
-      "images": [
-        {
-          "file": "01.jpg",
-          "mobileFile": null,
-          "width": 4640,
-          "height": 5208,
-          "orientation": "sq",
-          "url": "foto/sport/calcio/01.jpg",
-          "mobileUrl": null
-        },
-        {
-          "file": "02.jpg",
-          "mobileFile": null,
-          "width": 5406,
-          "height": 4052,
-          "orientation": "h",
-          "url": "foto/sport/calcio/02.jpg",
-          "mobileUrl": null
-        },
-        {
-          "file": "03.jpg",
-          "mobileFile": null,
-          "width": 4830,
-          "height": 4629,
-          "orientation": "sq",
-          "url": "foto/sport/calcio/03.jpg",
-          "mobileUrl": null
-        }
-      ]
-    }
-  ],
+  "copertina": [],
+  "sport": [],
   "eventi": [
     {
-      "slug": "matrimoni",
-      "name": "Matrimoni",
+      "slug": "ceremonies and events",
+      "name": "Ceremonies And Events",
       "type": "evento",
       "count": 0,
       "cover": [],
