@@ -1,10 +1,74 @@
 {
-  "generatedAt": "2026-07-23T18:22:45.500Z",
+  "generatedAt": "2026-07-23T18:27:40.321Z",
   "sistema": {
     "logo": "foto/sistema/logo.png",
     "profilo": "foto/sistema/profilo.jpg"
   },
-  "copertina": [],
+  "copertina": [
+    {
+      "file": "01.webp",
+      "mobileFile": null,
+      "width": null,
+      "height": null,
+      "orientation": "sq",
+      "url": "foto/copertina/01.webp",
+      "mobileUrl": null
+    },
+    {
+      "file": "02.webp",
+      "mobileFile": null,
+      "width": null,
+      "height": null,
+      "orientation": "sq",
+      "url": "foto/copertina/02.webp",
+      "mobileUrl": null
+    },
+    {
+      "file": "03.webp",
+      "mobileFile": null,
+      "width": null,
+      "height": null,
+      "orientation": "sq",
+      "url": "foto/copertina/03.webp",
+      "mobileUrl": null
+    },
+    {
+      "file": "04.webp",
+      "mobileFile": null,
+      "width": null,
+      "height": null,
+      "orientation": "sq",
+      "url": "foto/copertina/04.webp",
+      "mobileUrl": null
+    },
+    {
+      "file": "05.webp",
+      "mobileFile": null,
+      "width": null,
+      "height": null,
+      "orientation": "sq",
+      "url": "foto/copertina/05.webp",
+      "mobileUrl": null
+    },
+    {
+      "file": "06.webp",
+      "mobileFile": null,
+      "width": null,
+      "height": null,
+      "orientation": "sq",
+      "url": "foto/copertina/06.webp",
+      "mobileUrl": null
+    },
+    {
+      "file": "08.webp",
+      "mobileFile": null,
+      "width": null,
+      "height": null,
+      "orientation": "sq",
+      "url": "foto/copertina/08.webp",
+      "mobileUrl": null
+    }
+  ],
   "sport": [],
   "eventi": [
     {

@@ -13,7 +13,7 @@ const ROOT = path.join(__dirname, '..');
 const FOTO_DIR = path.join(ROOT, 'foto');
 const OUT_FILE = path.join(ROOT, 'manifest.json');
 
-const IMG_EXT = ['.jpg', '.jpeg', '.png'];
+const IMG_EXT = ['.jpg', '.jpeg', '.png', '.webp'];
 
 // ---- lettura dimensioni immagine senza librerie esterne ----
 function getImageSize(filePath) {
