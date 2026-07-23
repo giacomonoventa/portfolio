@@ -94,6 +94,13 @@ function listImages(dirPath) {
     });
 }
 
+// se le posizioni richieste non esistono (categoria con poche foto),
+// ripiega sulle prime immagini disponibili invece di lasciare la copertina vuota
+function fallbackCover(selected, allImages) {
+  if (selected.length > 0) return selected;
+  return allImages.slice(0, 3);
+}
+
 function titleCase(slug) {
   return slug
     .replace(/[-_]+/g, ' ')
@@ -117,7 +124,12 @@ function scanCategories(baseDir, type) {
         name: titleCase(slug),
         type,
         count: images.length,
-        cover: images.slice(0, 3).map(withUrl),
+        cover: {
+          // desktop: 2ª, 4ª, 6ª, 8ª immagine (indici 0-based: 1,3,5,7)
+          desktop: fallbackCover([1,3,5,7].map(i => images[i]).filter(Boolean), images).map(withUrl),
+          // mobile: 1ª, 3ª, 5ª immagine (indici 0-based: 0,2,4)
+          mobile: fallbackCover([0,2,4].map(i => images[i]).filter(Boolean), images).map(withUrl)
+        },
         images: images.map(withUrl)
       };
     });

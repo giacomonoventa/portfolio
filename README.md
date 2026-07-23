@@ -164,6 +164,32 @@ al refresh.
 Nessun altro file contiene codice del pannello — i valori che avrai
 eventualmente copiato nel CSS restano intatti.
 
+## Comportamento dell'header (barra di navigazione)
+
+- **In cima alla pagina**: sfondo trasparente, i link/pulsanti sono racchiusi
+  in "pillole" semitrasparenti senza bordo. La copertina occupa tutto lo
+  schermo, l'header vi galleggia sopra.
+- **Dopo un piccolo scroll** (circa 40px): l'header assume lo sfondo scuro
+  sfocato definito nel CSS (`header.scrolled`).
+- **Nome "Giacomo Noventa" nell'header**: compare solo quando il sottotitolo
+  della copertina, scorrendo, finisce coperto dall'header — non a un valore
+  fisso di scroll, ma legato alla posizione reale di quell'elemento
+  (funziona correttamente anche se cambi l'altezza della copertina).
+
+## Copertine delle categorie (sport/eventi) — selezione per dispositivo
+
+Le foto usate nella rotazione delle card in home **non sono più
+automaticamente le prime 3**: seguono una posizione fissa diversa per
+desktop e mobile, contando le foto della cartella a partire da 1:
+
+- **Desktop**: 2ª, 4ª, 6ª e 8ª foto
+- **Mobile**: 1ª, 3ª e 5ª foto
+
+Se la cartella ha meno foto di quelle richieste in quelle posizioni (es. una
+categoria con 1-2 foto), il sito ripiega automaticamente sulle prime foto
+disponibili, così la card non resta mai vuota. La scelta desktop/mobile
+avviene in base alla larghezza dello schermo al caricamento della pagina.
+
 ## Prossimi passi
 
 Il sito è funzionalmente completo lato struttura (home, gallerie, lightbox,

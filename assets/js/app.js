@@ -99,7 +99,7 @@
         ${hasHero ? '<div class="hero-overlay"></div>' : ''}
         <div class="hero-content">
           <div class="hero-title">Giacomo Noventa</div>
-          <div class="hero-sub">Sport photography</div>
+          <div class="hero-sub" id="hero-sub">Sport photography</div>
         </div>
       </section>
 
@@ -127,16 +127,30 @@
         slides[idx].classList.add('active');
       }, 4500);
     }
-    // nome header appare solo dopo che la hero esce dalla vista
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(entry=>{
-        headerEl.classList.toggle('show-name', !entry.isIntersecting);
-      });
-    }, {threshold:0});
-    io.observe(heroObserverTarget);
+    // 3) sfondo headbar: transizione dopo un piccolo scroll (poche decine di px)
+    window.addEventListener('scroll', onHeaderScroll, {passive:true});
+    onHeaderScroll(); // stato iniziale corretto anche se la pagina si apre già scrollata
+
+    // 4) nome nell'headbar: compare solo quando il sottotitolo finisce dietro l'headbar
+    const heroSubEl = document.getElementById('hero-sub');
+    if(heroSubEl){
+      const headerHeight = Math.ceil(headerEl.getBoundingClientRect().height);
+      const nameIO = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          headerEl.classList.toggle('show-name', !entry.isIntersecting);
+        });
+      }, {threshold:0, rootMargin:`-${headerHeight}px 0px 0px 0px`});
+      nameIO.observe(heroSubEl);
+    } else {
+      headerEl.classList.add('show-name'); // niente hero: nome sempre visibile
+    }
 
     buildSportGrid();
     buildOtherGrid();
+  }
+
+  function onHeaderScroll(){
+    headerEl.classList.toggle('scrolled', window.scrollY > 40);
   }
 
   function buildSportGrid(){
@@ -146,7 +160,7 @@
       return;
     }
     wrap.innerHTML = MANIFEST.sport.map(cat => {
-      const cover = cat.cover;
+      const cover = window.innerWidth <= 860 ? cat.cover.mobile : cat.cover.desktop;
       const slides = cover.length
         ? cover.map((img,i)=>`<div class="band-slide${i===0?' active':''}">${pictureTag(img,cat.name)}</div>`).join('')
         : emptyState('Foto in arrivo…');
@@ -181,7 +195,8 @@
       return;
     }
     wrap.innerHTML = MANIFEST.eventi.map(cat=>{
-      const cover0 = cat.cover[0];
+      const coverSet = window.innerWidth <= 860 ? cat.cover.mobile : cat.cover.desktop;
+      const cover0 = coverSet[0];
       return `
         <div class="other-card" data-slug="${cat.slug}" data-type="evento">
           ${cover0 ? pictureTag(cover0,cat.name) : emptyState('Foto in arrivo…')}
@@ -200,7 +215,7 @@
     const cat = list.find(c => c.slug === slug);
     if(!cat) return renderHome();
     window.scrollTo(0,0);
-    headerEl.classList.add('show-name');
+    headerEl.classList.add('show-name','scrolled');
 
     app.innerHTML = `
       <div class="cat-hero">
@@ -292,7 +307,7 @@
   // ---------- CHI SONO ----------
   function renderChiSono(){
     window.scrollTo(0,0);
-    headerEl.classList.add('show-name');
+    headerEl.classList.add('show-name','scrolled');
     const photo = MANIFEST.sistema.profilo
       ? `<img src="${MANIFEST.sistema.profilo}" alt="Giacomo Noventa">`
       : emptyState('Foto in arrivo…');
@@ -309,7 +324,7 @@
   // ---------- CONTATTI ----------
   function renderContatti(){
     window.scrollTo(0,0);
-    headerEl.classList.add('show-name');
+    headerEl.classList.add('show-name','scrolled');
     app.innerHTML = `
       <div class="contatti-page">
         <h1>Contatti</h1>

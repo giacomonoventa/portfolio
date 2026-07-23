@@ -32,7 +32,7 @@
   --img-sport-ratio:0.8;   /* 4:5 */
   --img-chisono-ratio:0.75; /* 3:4 */
   --other-card-height:180px;
-  --hero-height:92vh;
+  --hero-height:100vh;
   --lightbox-w:900px;
   --lightbox-h:640px;
   --logo-size:22px;
@@ -71,14 +71,14 @@ picture{display:contents;}
 }
 
 header{
-  position:sticky; top:0; z-index:100;
+  position:fixed; top:0; left:0; right:0; z-index:100;
   display:flex; align-items:center; justify-content:space-between;
   padding:22px var(--space-container-x);
   background:transparent;
   border-bottom:1px solid transparent;
   transition:background .4s var(--ease), border-color .4s var(--ease);
 }
-header.show-name{
+header.scrolled{
   background:rgba(10,10,11,.72);
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line);
@@ -94,15 +94,18 @@ header.show-name{
 }
 header.show-name .brand-name{opacity:1; transform:translateX(0);}
 
-nav{display:flex;align-items:center;gap:36px;}
+nav{display:flex;align-items:center;gap:14px;}
 .navlink{position:relative;}
 .navlink > span{
   font-size:var(--fs-nav); letter-spacing:.05em; text-transform:uppercase;
-  color:var(--text-1); cursor:pointer;
+  color:var(--text-0); cursor:pointer;
   display:flex;align-items:center;gap:6px;
-  transition:color .25s var(--ease);
+  background:rgba(255,255,255,.1);
+  border-radius:999px;
+  padding:9px 18px;
+  transition:background .25s var(--ease), color .25s var(--ease);
 }
-.navlink:hover > span, .navlink > span:hover{color:var(--text-0);}
+.navlink:hover > span, .navlink > span:hover{background:rgba(255,255,255,.18);}
 .navlink .caret{font-size:9px;transition:transform .25s var(--ease);}
 .navlink:hover .caret{transform:rotate(180deg);}
 .dropdown{
@@ -120,7 +123,12 @@ nav{display:flex;align-items:center;gap:36px;}
 }
 .dropdown a:hover{color:var(--text-0);background:var(--bg-2);}
 .dropdown .empty-note{padding:9px 18px;font-size:var(--fs-mono);color:var(--text-2);font-family:'JetBrains Mono',monospace;}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+.hamburger{
+  display:none;flex-direction:column;gap:5px;cursor:pointer;
+  background:rgba(255,255,255,.1); border-radius:999px;
+  padding:14px 12px; transition:background .25s var(--ease);
+}
+.hamburger:hover{background:rgba(255,255,255,.18);}
 .hamburger span{width:22px;height:1.5px;background:var(--text-0);}
 
 .hero{position:relative; height:var(--hero-height); overflow:hidden; display:flex; align-items:flex-end;}
@@ -244,7 +252,9 @@ footer .foot-cta{font-family:var(--serif); font-weight:600; font-size:var(--fs-b
     max-height:0; overflow:hidden; transition:max-height .35s var(--ease);}
   nav.open{max-height:400px;}
   .navlink{width:100%;}
-  .navlink > span{padding:16px 24px; width:100%; border-bottom:1px solid var(--line);}
+  .navlink > span{padding:16px 24px; width:100%; border-bottom:1px solid var(--line); background:transparent; border-radius:0;}
+  .navlink:hover > span, .navlink > span:hover{background:var(--bg-2);}
+  .hamburger{background:transparent; padding:6px;}
   .dropdown{position:static; transform:none; opacity:1; visibility:visible; display:none; background:var(--bg-2); min-width:0;}
   .navlink.open .dropdown{display:block;}
   .hamburger{display:flex;}
