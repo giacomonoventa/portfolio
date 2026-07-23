@@ -28,7 +28,7 @@ function getImageSize(filePath) {
     return { width, height };
   }
 
-  if (ext === '.jpg' || ext === '.jpeg') {
+  if (ext === '.jpg' || ext === '.jpeg' || ext === '.webp') {
     let offset = 2; // salta 0xFFD8
     while (offset < buf.length) {
       if (buf[offset] !== 0xff) { offset++; continue; }

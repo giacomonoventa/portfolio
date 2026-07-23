@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T18:27:40.321Z",
+  "generatedAt": "2026-07-23T18:29:49.768Z",
   "sistema": {
     "logo": "foto/sistema/logo.png",
     "profilo": "foto/sistema/profilo.jpg"
@@ -8,9 +8,9 @@
     {
       "file": "01.webp",
       "mobileFile": null,
-      "width": null,
-      "height": null,
-      "orientation": "sq",
+      "width": 38456,
+      "height": 65427,
+      "orientation": "v",
       "url": "foto/copertina/01.webp",
       "mobileUrl": null
     },
@@ -44,9 +44,9 @@
     {
       "file": "05.webp",
       "mobileFile": null,
-      "width": null,
-      "height": null,
-      "orientation": "sq",
+      "width": 10246,
+      "height": 53384,
+      "orientation": "v",
       "url": "foto/copertina/05.webp",
       "mobileUrl": null
     },
