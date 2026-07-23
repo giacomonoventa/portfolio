@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T18:34:31.935Z",
+  "generatedAt": "2026-07-23T18:38:38.608Z",
   "sistema": {
     "logo": "foto/sistema/logo.png",
     "profilo": "foto/sistema/profilo.jpg"
@@ -69,7 +69,622 @@
       "mobileUrl": null
     }
   ],
-  "sport": [],
+  "sport": [
+    {
+      "slug": "Hellas Verona",
+      "name": "Hellas Verona",
+      "type": "sport",
+      "count": 40,
+      "cover": [
+        {
+          "file": "01.webp",
+          "mobileFile": null,
+          "width": 28455,
+          "height": 2041,
+          "orientation": "h",
+          "url": "foto/sport/Hellas Verona/01.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "02.webp",
+          "mobileFile": null,
+          "width": 14514,
+          "height": 29267,
+          "orientation": "v",
+          "url": "foto/sport/Hellas Verona/02.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "03.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/03.webp",
+          "mobileUrl": null
+        }
+      ],
+      "images": [
+        {
+          "file": "01.webp",
+          "mobileFile": null,
+          "width": 28455,
+          "height": 2041,
+          "orientation": "h",
+          "url": "foto/sport/Hellas Verona/01.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "02.webp",
+          "mobileFile": null,
+          "width": 14514,
+          "height": 29267,
+          "orientation": "v",
+          "url": "foto/sport/Hellas Verona/02.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "03.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/03.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "04.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/04.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "05.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/05.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "06.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/06.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "07.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/07.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "08.webp",
+          "mobileFile": null,
+          "width": 61774,
+          "height": 39017,
+          "orientation": "h",
+          "url": "foto/sport/Hellas Verona/08.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "09.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/09.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "10.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/10.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "11.webp",
+          "mobileFile": null,
+          "width": 30904,
+          "height": 40081,
+          "orientation": "v",
+          "url": "foto/sport/Hellas Verona/11.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "12.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/12.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "13.webp",
+          "mobileFile": null,
+          "width": 11916,
+          "height": 63485,
+          "orientation": "v",
+          "url": "foto/sport/Hellas Verona/13.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "14.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/14.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "15.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/15.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "16.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/16.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "17.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/17.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "18.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/18.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "19.webp",
+          "mobileFile": null,
+          "width": 40111,
+          "height": 65469,
+          "orientation": "v",
+          "url": "foto/sport/Hellas Verona/19.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "20.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/20.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "21.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/21.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "22.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/22.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "23.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/23.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "24.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/24.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "25.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/25.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "26.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/26.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "27.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/27.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "28.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/28.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "29.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/29.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "30.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/30.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "31.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/31.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "32.webp",
+          "mobileFile": null,
+          "width": 60266,
+          "height": 31992,
+          "orientation": "h",
+          "url": "foto/sport/Hellas Verona/32.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "33.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/33.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "34.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/34.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "35.webp",
+          "mobileFile": null,
+          "width": 14334,
+          "height": 6118,
+          "orientation": "h",
+          "url": "foto/sport/Hellas Verona/35.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "36.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/36.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "37.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/37.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "38.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/38.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "39.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Hellas Verona/39.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "40.webp",
+          "mobileFile": null,
+          "width": 38093,
+          "height": 23785,
+          "orientation": "h",
+          "url": "foto/sport/Hellas Verona/40.webp",
+          "mobileUrl": null
+        }
+      ]
+    },
+    {
+      "slug": "Vicenza",
+      "name": "Vicenza",
+      "type": "sport",
+      "count": 20,
+      "cover": [
+        {
+          "file": "AQ7A0013.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A0013.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0052.webp",
+          "mobileFile": null,
+          "width": 62525,
+          "height": 6009,
+          "orientation": "h",
+          "url": "foto/sport/Vicenza/AQ7A0052.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0487.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A0487.webp",
+          "mobileUrl": null
+        }
+      ],
+      "images": [
+        {
+          "file": "AQ7A0013.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A0013.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0052.webp",
+          "mobileFile": null,
+          "width": 62525,
+          "height": 6009,
+          "orientation": "h",
+          "url": "foto/sport/Vicenza/AQ7A0052.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0487.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A0487.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0641.webp",
+          "mobileFile": null,
+          "width": 22356,
+          "height": 63985,
+          "orientation": "v",
+          "url": "foto/sport/Vicenza/AQ7A0641.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0688.webp",
+          "mobileFile": null,
+          "width": 50331,
+          "height": 51545,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A0688.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0782.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A0782.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0805.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A0805.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1060.webp",
+          "mobileFile": null,
+          "width": 7917,
+          "height": 11803,
+          "orientation": "v",
+          "url": "foto/sport/Vicenza/AQ7A1060.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1083.webp",
+          "mobileFile": null,
+          "width": 2894,
+          "height": 16387,
+          "orientation": "v",
+          "url": "foto/sport/Vicenza/AQ7A1083.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1103.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A1103.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1162.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A1162.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1212.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A1212.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1230.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A1230.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1252.webp",
+          "mobileFile": null,
+          "width": 51147,
+          "height": 17826,
+          "orientation": "h",
+          "url": "foto/sport/Vicenza/AQ7A1252.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1370.webp",
+          "mobileFile": null,
+          "width": 42365,
+          "height": 25574,
+          "orientation": "h",
+          "url": "foto/sport/Vicenza/AQ7A1370.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1462.webp",
+          "mobileFile": null,
+          "width": 38642,
+          "height": 10582,
+          "orientation": "h",
+          "url": "foto/sport/Vicenza/AQ7A1462.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1468.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A1468.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9785.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A9785.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9789.webp",
+          "mobileFile": null,
+          "width": 34026,
+          "height": 4811,
+          "orientation": "h",
+          "url": "foto/sport/Vicenza/AQ7A9789.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9809.webp",
+          "mobileFile": null,
+          "width": 64123,
+          "height": 62222,
+          "orientation": "sq",
+          "url": "foto/sport/Vicenza/AQ7A9809.webp",
+          "mobileUrl": null
+        }
+      ]
+    }
+  ],
   "eventi": [
     {
       "slug": "ceremonies and events",
