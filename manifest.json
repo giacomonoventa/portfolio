@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T18:38:38.608Z",
+  "generatedAt": "2026-07-23T18:43:31.558Z",
   "sistema": {
     "logo": "foto/sistema/logo.png",
     "profilo": "foto/sistema/profilo.jpg"
@@ -70,6 +70,772 @@
     }
   ],
   "sport": [
+    {
+      "slug": "basket",
+      "name": "Basket",
+      "type": "sport",
+      "count": 0,
+      "cover": [],
+      "images": []
+    },
+    {
+      "slug": "Cittadella",
+      "name": "Cittadella",
+      "type": "sport",
+      "count": 59,
+      "cover": [
+        {
+          "file": "AQ7A0038.webp",
+          "mobileFile": null,
+          "width": 62169,
+          "height": 65500,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A0038.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0087.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A0087.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0358.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A0358.webp",
+          "mobileUrl": null
+        }
+      ],
+      "images": [
+        {
+          "file": "AQ7A0038.webp",
+          "mobileFile": null,
+          "width": 62169,
+          "height": 65500,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A0038.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0087.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A0087.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0358.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A0358.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0467.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A0467.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0591.webp",
+          "mobileFile": null,
+          "width": 55343,
+          "height": 16708,
+          "orientation": "h",
+          "url": "foto/sport/Cittadella/AQ7A0591.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1263.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A1263.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1280.webp",
+          "mobileFile": null,
+          "width": 38383,
+          "height": 32683,
+          "orientation": "h",
+          "url": "foto/sport/Cittadella/AQ7A1280.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1343.webp",
+          "mobileFile": null,
+          "width": 9647,
+          "height": 53555,
+          "orientation": "v",
+          "url": "foto/sport/Cittadella/AQ7A1343.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1445.webp",
+          "mobileFile": null,
+          "width": 5533,
+          "height": 9003,
+          "orientation": "v",
+          "url": "foto/sport/Cittadella/AQ7A1445.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1484.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A1484.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1496.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A1496.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1507.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A1507.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1574.webp",
+          "mobileFile": null,
+          "width": 4055,
+          "height": 64554,
+          "orientation": "v",
+          "url": "foto/sport/Cittadella/AQ7A1574.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1638.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A1638.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1763.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A1763.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1877.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A1877.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1911.webp",
+          "mobileFile": null,
+          "width": 64489,
+          "height": 4632,
+          "orientation": "h",
+          "url": "foto/sport/Cittadella/AQ7A1911.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A2090.webp",
+          "mobileFile": null,
+          "width": 2972,
+          "height": 23561,
+          "orientation": "v",
+          "url": "foto/sport/Cittadella/AQ7A2090.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A2159.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A2159.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A2208.webp",
+          "mobileFile": null,
+          "width": 14347,
+          "height": 2606,
+          "orientation": "h",
+          "url": "foto/sport/Cittadella/AQ7A2208.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A2456.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A2456.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A2475.webp",
+          "mobileFile": null,
+          "width": 10246,
+          "height": 53384,
+          "orientation": "v",
+          "url": "foto/sport/Cittadella/AQ7A2475.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A2488.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A2488.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A2605.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A2605.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A2637.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A2637.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3916.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A3916.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3970.webp",
+          "mobileFile": null,
+          "width": 53566,
+          "height": 29752,
+          "orientation": "h",
+          "url": "foto/sport/Cittadella/AQ7A3970.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4289.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A4289.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4522.webp",
+          "mobileFile": null,
+          "width": 31734,
+          "height": 7117,
+          "orientation": "h",
+          "url": "foto/sport/Cittadella/AQ7A4522.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4567.webp",
+          "mobileFile": null,
+          "width": 41911,
+          "height": 32725,
+          "orientation": "h",
+          "url": "foto/sport/Cittadella/AQ7A4567.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4778.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A4778.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A5184.webp",
+          "mobileFile": null,
+          "width": 48781,
+          "height": 18429,
+          "orientation": "h",
+          "url": "foto/sport/Cittadella/AQ7A5184.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A6631.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A6631.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A6939.webp",
+          "mobileFile": null,
+          "width": 65427,
+          "height": 57303,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A6939.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7011.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A7011.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7360.webp",
+          "mobileFile": null,
+          "width": 65063,
+          "height": 62187,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A7360.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7492.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A7492.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7563.webp",
+          "mobileFile": null,
+          "width": 38189,
+          "height": 20176,
+          "orientation": "h",
+          "url": "foto/sport/Cittadella/AQ7A7563.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7631.webp",
+          "mobileFile": null,
+          "width": 15002,
+          "height": 11638,
+          "orientation": "h",
+          "url": "foto/sport/Cittadella/AQ7A7631.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7676.webp",
+          "mobileFile": null,
+          "width": 65331,
+          "height": 57807,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A7676.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7713.webp",
+          "mobileFile": null,
+          "width": 711,
+          "height": 50956,
+          "orientation": "v",
+          "url": "foto/sport/Cittadella/AQ7A7713.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7799.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A7799.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7819.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A7819.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7940.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A7940.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7978.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A7978.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7998.webp",
+          "mobileFile": null,
+          "width": 65523,
+          "height": 32754,
+          "orientation": "h",
+          "url": "foto/sport/Cittadella/AQ7A7998.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8069.webp",
+          "mobileFile": null,
+          "width": 27487,
+          "height": 20287,
+          "orientation": "h",
+          "url": "foto/sport/Cittadella/AQ7A8069.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8107.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A8107.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8184.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A8184.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8190.webp",
+          "mobileFile": null,
+          "width": 18011,
+          "height": 19639,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A8190.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8538.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A8538.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8563.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A8563.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8572.webp",
+          "mobileFile": null,
+          "width": 37128,
+          "height": 38679,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A8572.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8577.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A8577.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8659.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A8659.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8740.webp",
+          "mobileFile": null,
+          "width": 40708,
+          "height": 13835,
+          "orientation": "h",
+          "url": "foto/sport/Cittadella/AQ7A8740.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9058.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A9058.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9274.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A9274.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9797.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Cittadella/AQ7A9797.webp",
+          "mobileUrl": null
+        }
+      ]
+    },
+    {
+      "slug": "Como",
+      "name": "Como",
+      "type": "sport",
+      "count": 17,
+      "cover": [
+        {
+          "file": "AQ7A2158.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A2158.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A2187.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A2187.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A2449.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A2449.webp",
+          "mobileUrl": null
+        }
+      ],
+      "images": [
+        {
+          "file": "AQ7A2158.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A2158.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A2187.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A2187.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A2449.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A2449.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A2941.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A2941.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3212.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A3212.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3480.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A3480.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3763.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A3763.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3774.webp",
+          "mobileFile": null,
+          "width": 17480,
+          "height": 32880,
+          "orientation": "v",
+          "url": "foto/sport/Como/AQ7A3774.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3861.webp",
+          "mobileFile": null,
+          "width": 17855,
+          "height": 38727,
+          "orientation": "v",
+          "url": "foto/sport/Como/AQ7A3861.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3893.webp",
+          "mobileFile": null,
+          "width": 60066,
+          "height": 56137,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A3893.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4034.webp",
+          "mobileFile": null,
+          "width": 28601,
+          "height": 24265,
+          "orientation": "h",
+          "url": "foto/sport/Como/AQ7A4034.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4039.webp",
+          "mobileFile": null,
+          "width": 20050,
+          "height": 42532,
+          "orientation": "v",
+          "url": "foto/sport/Como/AQ7A4039.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4081.webp",
+          "mobileFile": null,
+          "width": 40111,
+          "height": 65469,
+          "orientation": "v",
+          "url": "foto/sport/Como/AQ7A4081.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4153.webp",
+          "mobileFile": null,
+          "width": 50289,
+          "height": 40253,
+          "orientation": "h",
+          "url": "foto/sport/Como/AQ7A4153.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4162.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A4162.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4435.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A4435.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4533.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Como/AQ7A4533.webp",
+          "mobileUrl": null
+        }
+      ]
+    },
     {
       "slug": "Hellas Verona",
       "name": "Hellas Verona",
@@ -463,6 +1229,790 @@
           "height": 23785,
           "orientation": "h",
           "url": "foto/sport/Hellas Verona/40.webp",
+          "mobileUrl": null
+        }
+      ]
+    },
+    {
+      "slug": "Padova",
+      "name": "Padova",
+      "type": "sport",
+      "count": 83,
+      "cover": [
+        {
+          "file": "AQ7A0012.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A0012.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0171.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A0171.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0221.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A0221.webp",
+          "mobileUrl": null
+        }
+      ],
+      "images": [
+        {
+          "file": "AQ7A0012.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A0012.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0171.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A0171.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0221.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A0221.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0229.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A0229.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0261.webp",
+          "mobileFile": null,
+          "width": 39415,
+          "height": 29027,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A0261.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0294.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A0294.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0329.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A0329.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0446.webp",
+          "mobileFile": null,
+          "width": 19616,
+          "height": 63805,
+          "orientation": "v",
+          "url": "foto/sport/Padova/AQ7A0446.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0453.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A0453.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0518.webp",
+          "mobileFile": null,
+          "width": 55473,
+          "height": 2960,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A0518.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0719.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A0719.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A0924.webp",
+          "mobileFile": null,
+          "width": 17918,
+          "height": 32743,
+          "orientation": "v",
+          "url": "foto/sport/Padova/AQ7A0924.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1307.webp",
+          "mobileFile": null,
+          "width": 11770,
+          "height": 6700,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A1307.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1465.webp",
+          "mobileFile": null,
+          "width": 20316,
+          "height": 50047,
+          "orientation": "v",
+          "url": "foto/sport/Padova/AQ7A1465.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1468.webp",
+          "mobileFile": null,
+          "width": 24835,
+          "height": 49211,
+          "orientation": "v",
+          "url": "foto/sport/Padova/AQ7A1468.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A1493.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A1493.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3001.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A3001.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3024.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A3024.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3188.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A3188.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3296.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A3296.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3370.webp",
+          "mobileFile": null,
+          "width": 11207,
+          "height": 43635,
+          "orientation": "v",
+          "url": "foto/sport/Padova/AQ7A3370.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3467.webp",
+          "mobileFile": null,
+          "width": 20537,
+          "height": 12164,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A3467.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3634.webp",
+          "mobileFile": null,
+          "width": 15222,
+          "height": 25776,
+          "orientation": "v",
+          "url": "foto/sport/Padova/AQ7A3634.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A3733.webp",
+          "mobileFile": null,
+          "width": 21851,
+          "height": 7200,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A3733.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4280.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A4280.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4354.webp",
+          "mobileFile": null,
+          "width": 42871,
+          "height": 19030,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A4354.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4435.webp",
+          "mobileFile": null,
+          "width": 61657,
+          "height": 1358,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A4435.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4508.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A4508.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4533.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A4533.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4588.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A4588.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4865.webp",
+          "mobileFile": null,
+          "width": 19182,
+          "height": 12466,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A4865.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4906.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A4906.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A4911.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A4911.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A6056.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A6056.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A6111.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A6111.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A6374.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A6374.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A6392.webp",
+          "mobileFile": null,
+          "width": 30465,
+          "height": 33889,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A6392.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A6418.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A6418.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A6623.webp",
+          "mobileFile": null,
+          "width": 50417,
+          "height": 30913,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A6623.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A6658.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A6658.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A6683.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A6683.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A6937.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A6937.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A6954.webp",
+          "mobileFile": null,
+          "width": 55027,
+          "height": 22284,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A6954.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A6975.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A6975.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7083.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A7083.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7185.webp",
+          "mobileFile": null,
+          "width": 3508,
+          "height": 28979,
+          "orientation": "v",
+          "url": "foto/sport/Padova/AQ7A7185.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7195.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A7195.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7201.webp",
+          "mobileFile": null,
+          "width": 48148,
+          "height": 46669,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A7201.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7209.webp",
+          "mobileFile": null,
+          "width": 24019,
+          "height": 16796,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A7209.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7220.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A7220.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7252.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A7252.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7263.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A7263.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7340.webp",
+          "mobileFile": null,
+          "width": 21529,
+          "height": 12807,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A7340.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7399.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A7399.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7447.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A7447.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7555.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A7555.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7680.webp",
+          "mobileFile": null,
+          "width": 35001,
+          "height": 13446,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A7680.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A7958.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A7958.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8180.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A8180.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8226.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A8226.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8268.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A8268.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8475.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A8475.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8625.webp",
+          "mobileFile": null,
+          "width": 38311,
+          "height": 65493,
+          "orientation": "v",
+          "url": "foto/sport/Padova/AQ7A8625.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8669.webp",
+          "mobileFile": null,
+          "width": 42864,
+          "height": 28279,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A8669.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8930.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A8930.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8939.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A8939.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8958.webp",
+          "mobileFile": null,
+          "width": 38456,
+          "height": 65427,
+          "orientation": "v",
+          "url": "foto/sport/Padova/AQ7A8958.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A8970.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A8970.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9061.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A9061.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9126.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A9126.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9168.webp",
+          "mobileFile": null,
+          "width": 2359,
+          "height": 43522,
+          "orientation": "v",
+          "url": "foto/sport/Padova/AQ7A9168.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9268.webp",
+          "mobileFile": null,
+          "width": 38598,
+          "height": 32689,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A9268.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9358.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A9358.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9458.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A9458.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9545.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A9545.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9549.webp",
+          "mobileFile": null,
+          "width": 39246,
+          "height": 32677,
+          "orientation": "h",
+          "url": "foto/sport/Padova/AQ7A9549.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9636.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A9636.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9640.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A9640.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9644.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A9644.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9849.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A9849.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9855.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A9855.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9925.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A9925.webp",
+          "mobileUrl": null
+        },
+        {
+          "file": "AQ7A9981.webp",
+          "mobileFile": null,
+          "width": null,
+          "height": null,
+          "orientation": "sq",
+          "url": "foto/sport/Padova/AQ7A9981.webp",
           "mobileUrl": null
         }
       ]
